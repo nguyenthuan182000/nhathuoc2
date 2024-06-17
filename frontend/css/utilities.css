@@ -1,0 +1,72 @@
+.modal-content {
+    border-radius: 15px;
+}
+
+/* Modal Login */
+#modalLogin .modal-header {
+    border-bottom: none;
+    padding: 15px;
+}
+
+#modalLogin .modal-body {
+    padding: 0 7rem;
+}
+
+#modalLogin .modal-body .title-login {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#modalLogin .modal-body .text-login {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.005em;
+}
+
+#modalLogin .modal-body .wrapper-form-login .form-control {
+    height: 48px;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+#modalLogin .modal-body .wrapper-form-login .btn-login {
+    width: 100%;
+    height: 48px;
+    border-radius: 40px;
+    font-size: 1.5rem;
+}
+
+#modalLogin .modal-body .wrapper-register {
+    text-align: center;
+}
+
+#modalLogin .modal-body .wrapper-register .register {
+    position: relative;
+}
+
+#modalLogin .modal-body .wrapper-register .register .line:first-child {
+    position: absolute;
+    height: 1px;
+    width: 20%;
+    background-color: #ccc;
+    top: 40%;
+    left: 10%;
+}
+
+#modalLogin .modal-body .wrapper-register .register .line:last-child {
+    position: absolute;
+    height: 1px;
+    width: 20%;
+    background-color: #ccc;
+    top: 40%;
+    right: 10%;
+}
+
+#modalLogin .modal-body .wrapper-register .register .link-register {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#modalLogin .modal-footer {
+    border-top: none;
+}
