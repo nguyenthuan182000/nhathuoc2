@@ -1,3 +1,16 @@
+#overlay.active,
+#overlay-filter.active {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(2, 11, 39, 0.5);
+  z-index: 10;
+  transition: all 0.1s ease-in;
+}
+
 .modal-content {
   border-radius: 15px;
 }
@@ -9,31 +22,36 @@
 }
 
 #modalLogin .modal-body {
-  padding: 0 7rem;
+  padding: 0 53px;
 }
 
 #modalLogin .modal-body .title-login {
-  font-size: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.005em;
   font-weight: 700;
+  color: #020b27;
 }
 
 #modalLogin .modal-body .text-login {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.005em;
+  font-weight: 400;
+  color: #4a4f63;
 }
 
 #modalLogin .modal-body .wrapper-form-login .form-control {
-  height: 48px;
-  font-size: 1.5rem;
-  padding: 2rem;
+  /* height: 48px; */
+  font-size: 16px;
+  padding: 11px 56px 11px 15px;
 }
 
 #modalLogin .modal-body .wrapper-form-login .btn-login {
   width: 100%;
   height: 48px;
   border-radius: 40px;
-  font-size: 1.5rem;
+  font-size: 16px;
 }
 
 #modalLogin .modal-body .wrapper-register {
@@ -42,24 +60,25 @@
 
 #modalLogin .modal-body .wrapper-register .register {
   position: relative;
+  font-size: 14px;
 }
 
 #modalLogin .modal-body .wrapper-register .register .line:first-child {
   position: absolute;
   height: 1px;
-  width: 20%;
+  width: 30%;
   background-color: #ccc;
-  top: 40%;
-  left: 10%;
+  top: 45%;
+  left: 2%;
 }
 
 #modalLogin .modal-body .wrapper-register .register .line:last-child {
   position: absolute;
   height: 1px;
-  width: 20%;
+  width: 30%;
   background-color: #ccc;
-  top: 40%;
-  right: 10%;
+  top: 45%;
+  right: 2%;
 }
 
 #modalLogin .modal-body .wrapper-register .register .link-register {
@@ -76,5 +95,65 @@
 }
 
 .pb-16 {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
+}
+
+#form-filter {
+  display: none;
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: unset;
+  top: unset;
+  left: unset;
+  right: unset;
+  z-index: 20;
+  margin-top: 0.25rem;
+  border-radius: 16px;
+}
+
+#form-filter .wrapper-form-filter .filter-quick {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#form-filter .wrapper-form-filter p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#form-filter .wrapper-form-filter .filter-quick .box-filte__quick {
+  line-height: 21px;
+  border: 1px solid rgb(229, 231, 235);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+#form-filter .wrapper-form-filter .filter-quick .box-filte__quick:hover {
+  background-color: #e4e8ed;
+  transition: all 0.3s;
+  border: 1px solid #b3b0b0;
+}
+
+#form-filter .wrapper-form-filter .filter-quick .box-filte__quick a {
+  color: rgb(2, 11, 39);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#form-filter .wrapper-form-filter .filter-quick .box-filte__quick a span {
+  cursor: pointer;
+  overflow: hidden;
+  will-change: transform;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  margin-inline-end: 0px;
 }

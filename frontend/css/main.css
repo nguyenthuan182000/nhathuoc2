@@ -18,7 +18,6 @@
 }
 
 html {
-  /* font-size: 62.5%; */
   font-weight: 500;
 }
 
@@ -40,19 +39,14 @@ a {
   --bx-shadow-primary: 0px 0px 16px -4px rgba(0, 39, 102, 0.08),
     0px 0px 6px -2px rgba(0, 39, 102, 0.03);
 }
-/* .container {
-  padding-inline: 32px;
-} */
 
 /* Header */
+#header {
+  position: relative;
+  z-index: 99;
+}
+
 #header-info {
-  /* background-color: #5d87e2;
-    background-image: linear-gradient(
-        181deg,
-        #5d87e2 0%,
-        #4d65e6 50%,
-        #1347e8 100%
-    ); */
   background-image: url("../images/header-bg.webp");
   background-repeat: no-repeat;
 }
@@ -132,26 +126,12 @@ a {
 
 #header-info .header-top .nav {
   display: grid;
-  grid-template-columns: auto 58% auto;
+  grid-template-columns: auto 55% auto;
   align-items: center;
 }
 
-/* #header-info .header-top .nav .nav-logo {
-  display: flex;
-}
-
-#header-info .header-top .nav .nav-logo a {
-  margin: auto;
-}
-
-#header-info .header-top .nav .nav-logo a img {
-  width: 100%;
-  height: 100%;
-  max-width: 80px;
-} */
-
 #header-info .header-top .nav .nav-filter .wrapper-filer {
-  padding: 0px 22px;
+  /* padding: 0px 22px; */
   position: relative;
 }
 
@@ -163,7 +143,7 @@ a {
   border-radius: 50%;
   border: none;
   top: 12%;
-  right: 4%;
+  right: 1%;
 }
 
 #header-info .header-top .nav .nav-filter .wrapper-filer input {
@@ -197,8 +177,8 @@ a {
 #header-info .header-top .nav .nav-action .wrapper-action {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  justify-content: center;
+  gap: 30px;
+  justify-content: end;
 }
 
 #header-info .header-top .nav .nav-action .wrapper-action .link-sign-up,
@@ -220,6 +200,12 @@ a {
 }
 
 /* Menu */
+#navbar {
+  position: relative;
+  z-index: 13;
+  background-color: var(--color-white);
+}
+
 #navbar .wrapper-menu .list-menu {
   display: flex;
   align-items: center;
@@ -654,12 +640,13 @@ a {
   position: relative;
   left: 42%;
   top: -10px;
+  width: max-content;
 }
 
 .product__sell .box-product__sell .title-product__sell {
   position: absolute;
   top: 16%;
-  left: 4%;
+  left: 25%;
   color: var(--color-white);
   font-size: 18px;
   margin-bottom: 0;

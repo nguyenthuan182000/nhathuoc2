@@ -30,6 +30,8 @@
 
   <body>
     <div class="wrapper">
+      <div id="overlay"></div>
+      <div id="overlay-filter"></div>
       <!-- Start Header -->
       <header id="header">
         <section id="header-info">
@@ -84,6 +86,8 @@
                         type="text"
                         name=""
                         placeholder="Tìm tên thuốc, bệnh lý, thực phẩm chức năng..."
+                        id="search-input"
+                        onfocus="showFilter()"
                       />
 
                       <button class="icon-search">
@@ -92,6 +96,56 @@
                           style="color: #0843ba; font-size: 16px"
                         ></i>
                       </button>
+
+                      <div id="form-filter">
+                        <div class="wrapper-form-filter py-2">
+                          <div class="px-3 mt-2">
+                            <p>Tra cứu hàng đầu</p>
+                            <div class="filter-quick">
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>dung dịch vệ sinh</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>sữa rửa mặt</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>thuốc nhỏ mắt</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>D3</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>sắt</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>kem chống nắng</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>canxi</span>
+                                </a>
+                              </div>
+                              <div class="box-filte__quick">
+                                <a href="#">
+                                  <span>Kẽm</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -112,7 +166,7 @@
 
                     <a class="wrapper-cart">
                       <i
-                        class="fa-solid fa-cart-shopping me-3"
+                        class="fa-solid fa-cart-shopping me-2"
                         style="color: #ffffff"
                       ></i>
                       Giỏ hàng
@@ -133,80 +187,77 @@
               </ul>
             </div>
           </div>
-
-          <!-- Modal Login -->
-          <div
-            class="modal fade"
-            id="modalLogin"
-            tabindex="-1"
-            aria-labelledby="modalLogin"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <div class="text-center">
-                    <h2 class="title-login">Đăng nhập</h2>
-                    <p class="text-login mb-4">
-                      Vui lòng đăng nhập để hưởng những đặc quyền dành cho thành
-                      viên.
-                    </p>
-                  </div>
-                  <form class="mb-4">
-                    <div class="wrapper-form-login">
-                      <input
-                        type="gmail"
-                        class="form-control mb-4"
-                        placeholder="Vui lòng nhập địa chỉ gmail"
-                        name="email"
-                      />
-                      <input
-                        type="password"
-                        class="form-control mb-4"
-                        placeholder="Vui lòng nhập password"
-                        name="password"
-                      />
-                      <button class="btn btn-primary btn-login">
-                        Đăng nhập
-                      </button>
-                    </div>
-                  </form>
-
-                  <div class="wrapper-register mb-4">
-                    <div class="register">
-                      <div class="line"></div>
-                      hoặc đăng ký
-                      <a
-                        class="link-register show-modal"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalRegister"
-                        >Tại đây</a
-                      >
-                      <div class="line"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <img
-                    src="frontend/images/auth-modal-footer.svg"
-                    alt="Logo-footer-login"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </header>
       <!-- End Header  -->
+      <!-- Modal Login -->
+      <div
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        aria-labelledby="modalLogin"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center">
+                <h2 class="title-login">Đăng nhập</h2>
+                <p class="text-login mb-3">
+                  Vui lòng đăng nhập để hưởng những đặc quyền dành cho thành
+                  viên.
+                </p>
+              </div>
+              <form class="mb-2">
+                <div class="wrapper-form-login">
+                  <input
+                    type="gmail"
+                    class="form-control mb-3"
+                    placeholder="Vui lòng nhập địa chỉ gmail"
+                    name="email"
+                  />
+                  <input
+                    type="password"
+                    class="form-control mb-3"
+                    placeholder="Vui lòng nhập password"
+                    name="password"
+                  />
+                  <button class="btn btn-primary btn-login">Đăng nhập</button>
+                </div>
+              </form>
 
+              <div class="wrapper-register mb-3">
+                <div class="register">
+                  <div class="line"></div>
+                  hoặc đăng ký
+                  <a
+                    class="link-register show-modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalRegister"
+                    >Tại đây</a
+                  >
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <img
+                src="frontend/images/auth-modal-footer.svg"
+                alt="Logo-footer-login"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
       <!-- Start Nav -->
       <nav id="navbar">
         <div class="container wrapper-menu">
@@ -224,6 +275,7 @@
                   <button
                     class="tablinks"
                     onmouseover="openTab(event, 'tab-1')"
+                    onmouseout="removeOverlayClass()"
                   >
                     <i
                       class="fa-solid fa-heart-pulse me-3"
@@ -234,6 +286,7 @@
                   <button
                     class="tablinks"
                     onmouseover="openTab(event, 'tab-2')"
+                    onmouseout="removeOverlayClass()"
                   >
                     <i
                       class="fa-solid fa-heart-pulse me-3"
@@ -1389,6 +1442,62 @@
         document.getElementById(tabId).style.display = "block";
         evt.currentTarget.className += " active";
       }
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuItems = document.querySelectorAll(".item-menu");
+        const overlay = document.getElementById("overlay");
+
+        menuItems.forEach((item) => {
+          item.addEventListener("mouseover", () => {
+            overlay.classList.add("active");
+          });
+
+          item.addEventListener("mouseout", () => {
+            overlay.classList.remove("active");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      function showFilter() {
+        const formFilter = document.getElementById("form-filter");
+        const overlayFiler = document.getElementById("overlay-filter");
+        overlayFiler.classList.add("active");
+        formFilter.style.display = "block";
+      }
+
+      function hideFilter(event) {
+        const formFilter = document.getElementById("form-filter");
+        const searchInput = document.getElementById("search-input");
+        const overlayFiler = document.getElementById("overlay-filter");
+
+        if (
+          event.target !== searchInput &&
+          !formFilter.contains(event.target)
+        ) {
+          overlayFiler.classList.remove("active");
+          formFilter.style.display = "none";
+        }
+      }
+
+      document.addEventListener("click", function (event) {
+        hideFilter(event);
+      });
+
+      document
+        .getElementById("search-input")
+        .addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
+
+      document
+        .getElementById("form-filter")
+        .addEventListener("click", function (event) {
+          event.stopPropagation();
+        });
     </script>
   </body>
 </html>
