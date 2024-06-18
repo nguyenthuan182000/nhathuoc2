@@ -1836,13 +1836,91 @@
           <div class="container">
             <div class="wrapper-health">
               <img
+                class="img-health-check"
                 src="https://cdn.nhathuoclongchau.com.vn/unsafe/1920x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/Kiem_tra_suc_khoe_27634e751f.jpg"
                 alt="Background Health check"
               />
               <div class="content-health">
                 <div class="row">
-                  <div class="col-12 col-md-12 col-lg-8">
-                    
+                  <div class="col-12 col-md-12 col-lg-9">
+                    <div>
+                      <p class="title">Kiểm tra sức khỏe</p>
+                      <p class="content">
+                        Kết quả đánh giá sẽ cho bạn lời khuyên xử trí phù hợp!
+                      </p>
+                    </div>
+
+                    <div class="wrapper-slider__health">
+                      <div class="slider-health">
+                        <div class="slider-box__health">
+                          <div class="content-box__health">
+                            <div class="img-box__health">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/tim_mach_43be20993d.png"
+                                alt="Img health"
+                              />
+                            </div>
+                            <div class="content__health">
+                              <p>Kiểm tra nguy cơ mắc bệnh tim mạch</p>
+                              <a href="#">Bắt đầu</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="slider-box__health">
+                          <div class="content-box__health">
+                            <div class="img-box__health">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/sa_sut_tri_tue_73b6b51a85.png"
+                                alt="Img health"
+                              />
+                            </div>
+                            <div class="content__health">
+                              <p>Kiểm tra nguy cơ mắc bệnh Alzheimer</p>
+                              <a href="#">Bắt đầu</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="slider-box__health">
+                          <div class="content-box__health">
+                            <div class="img-box__health">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/da_day_24ef495d10.png"
+                                alt="Img health"
+                              />
+                            </div>
+                            <div class="content__health">
+                              <p>Kiểm tra nguy cơ mắc bệnh trào ngược dạ dày</p>
+                              <a href="#">Bắt đầu</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="slider-box__health">
+                          <div class="content-box__health">
+                            <div class="img-box__health">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/80x80/https://cms-prod.s3-sgn09.fptcloud.com/smalls/hen_suyen_c9ae54cca5.png"
+                                alt="Img health"
+                              />
+                            </div>
+                            <div class="content__health">
+                              <p>Kiểm tra nguy cơ mắc bệnh hen suyễn</p>
+                              <a href="#">Bắt đầu</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-3">
+                    <div class="img-content-health">
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/305x204/https://cms-prod.s3-sgn09.fptcloud.com/kiemtrasuckhoe_07cfeb2a5d.png"
+                        alt="Img"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1886,6 +1964,31 @@
         $(".my-slider").slick({
           slidesToShow: 5,
           slidesToScroll: 5,
+          arrows: true,
+          dots: false,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: false,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+        $(".slider-health").slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
           arrows: true,
           dots: false,
           speed: 300,
