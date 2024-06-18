@@ -15,7 +15,16 @@
     <!-- <link rel="stylesheet" href="frontend/lib/Semantic-UI/semantic.min.css" /> -->
     <!-- FontAwesome -->
     <link rel="stylesheet" href="frontend/lib/fontawesome/css/all.min.css" />
+
     <!-- Slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
@@ -190,6 +199,7 @@
         </section>
       </header>
       <!-- End Header  -->
+
       <!-- Modal Login -->
       <div
         class="modal fade"
@@ -258,6 +268,7 @@
         </div>
       </div>
       <!-- End Modal -->
+
       <!-- Start Nav -->
       <nav id="navbar">
         <div class="container wrapper-menu">
@@ -1365,27 +1376,479 @@
           </div>
         </section>
 
-        <!-- <section class="section-brand">
-          <div class="container brand pd-6">
-            <div class="wrapper-brand">
-              <img
-                src="https://cdn.nhathuoclongchau.com.vn/unsafe/28x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/thuong_hieu_yeu_thich_e0c23dded6.png"
-                alt="Img brand"
-              />
-              <h2>Thương hiệu yêu thích</h2>
-            </div>
-            <div class="slider-wrapper">
-              <div class="slider">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
+        <section class="section-brand py-4">
+          <div class="container brand">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-12 mb-3">
+                <div class="wrapper-brand">
+                  <img
+                    src="https://cdn.nhathuoclongchau.com.vn/unsafe/28x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/thuong_hieu_yeu_thich_e0c23dded6.png"
+                    alt="Img brand"
+                  />
+                  <h2 class="title-section">Thương hiệu yêu thích</h2>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="wrapper-slider">
+                  <div class="my-slider">
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09365_33ea32b9d1.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/KUDOS_1_397eba3612.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00503274_vien_uong_chong_lao_hoa_lam_dep_da_nmn_premium_21600_60v_1865_63e4_large_5bf0c423ec.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/Jpanwell_2_81e568c17e.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 35%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_03134_4e1b20a326.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/Vitabiotics_1_8d1424372d.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 30%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_02462_cb68b5f857.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/OKAMOTO_1_0c3fb5d4a4.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_08986_a3ca1e01d8.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/omexxel_logo_14f3820cbf.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09365_33ea32b9d1.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/KUDOS_1_397eba3612.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09365_33ea32b9d1.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/KUDOS_1_397eba3612.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09365_33ea32b9d1.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/KUDOS_1_397eba3612.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="item-slider">
+                      <a href="#">
+                        <div class="m-auto">
+                          <img
+                            class="img-product"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09365_33ea32b9d1.jpg"
+                            alt="Img Logo"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <img
+                            class="img-brand"
+                            src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/smalls/KUDOS_1_397eba3612.png"
+                            alt="Img brand"
+                          />
+                        </div>
+
+                        <div class="m-auto">
+                          <div class="mt-3 sale-brand">Giảm 20%</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
+
+        <section class="categories pb-3">
+          <div class="container">
+            <div class="wrapper-title mb-4">
+              <img
+                src="https://cdn.nhathuoclongchau.com.vn/unsafe/28x28/https://cms-prod.s3-sgn09.fptcloud.com/smalls/danh_muc_noi_bat_d03496597a.png"
+                alt="Img brand"
+              />
+              <h2 class="title-section">Danh mục nổi bật</h2>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Vitamin & Khoáng chất</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-2">
+                <a href="#" class="link-categories">
+                  <div class="box-categories">
+                    <picture>
+                      <img
+                        src="https://cdn.nhathuoclongchau.com.vn/unsafe/24x24/https://cms-prod.s3-sgn09.fptcloud.com/smalls/than_kinh_nao_level_2_b0cc93af6f.png"
+                        alt="Thần kinh não"
+                      />
+                    </picture>
+                    <div class="content">
+                      <h3>Thần kinh não</h3>
+                      <span>99 sản phẩm</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="health-check">
+          <div class="container">
+            <div class="wrapper-health">
+              <img
+                src="https://cdn.nhathuoclongchau.com.vn/unsafe/1920x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/Kiem_tra_suc_khoe_27634e751f.jpg"
+                alt="Background Health check"
+              />
+              <div class="content-health">
+                <div class="row">
+                  <div class="col-12 col-md-12 col-lg-8">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <!-- End Main -->
       <!-- Start Footer -->
@@ -1419,12 +1882,31 @@
     <script src="frontend/js/main.js"></script>
 
     <script>
-      $(".slick-slider").slick({
-        slidesToShow: 3,
-        infinite: false,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+      $(document).ready(function () {
+        $(".my-slider").slick({
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          arrows: true,
+          dots: false,
+          speed: 300,
+          infinite: false,
+          autoplaySpeed: 5000,
+          autoplay: false,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
       });
     </script>
 

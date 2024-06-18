@@ -869,7 +869,127 @@ a {
   align-items: center;
 }
 
-.section-brand .brand .wrapper-brand h2 {
-  margin-top: 0;
-  margin-left: 1.2rem;
+.section-brand .brand .wrapper-slider {
+  overflow-x: hidden;
+}
+
+.section-brand .brand .slick-initialized .slick-slide {
+  margin: 0 15px 0 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.section-brand .brand .slick-initialized .slick-slide a {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+.section-brand .brand .slick-initialized .slick-slide a:hover {
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--color-primary);
+}
+
+.section-brand .brand .slick-initialized .slick-slide a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.section-brand .brand .slick-initialized .slick-slide a .img-product {
+  width: 160px;
+  height: 160px;
+}
+
+.section-brand .brand .slick-initialized .slick-slide a .img-brand {
+  width: 203px;
+  height: 56px;
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.section-brand .brand .slick-initialized .slick-slide a .sale-brand {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.section-brand .brand .slick-initialized .slick-next.slick-disabled,
+.section-brand .brand .slick-initialized .slick-prev.slick-disabled {
+  display: none !important;
+}
+
+
+
+/* categories */
+.categories {
+  background: linear-gradient(180deg, var(--color-white) 0.49%, #f7faff 100%);
+}
+
+.categories .wrapper-title {
+  display: flex;
+  align-items: center;
+}
+
+.categories .link-categories .box-categories {
+  padding: 22px 15px;
+  background-color: var(--color-white);
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #d9dfe5;
+}
+
+.categories .link-categories .box-categories .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.categories .link-categories .box-categories .content h3 {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: #020b27;
+  margin: 8px 0 4px;
+}
+
+.categories .link-categories .box-categories .content span {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #657384;
+  text-align: center;
+}
+
+/* Health check */
+.health-check {
+  background: linear-gradient(rgb(248 252 255) 0%, rgb(255, 254, 253) 100%);
+}
+
+.health-check .wrapper-health {
+  position: relative;
+}
+
+.health-check .wrapper-health img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.health-check .wrapper-health .content-health {
+  position: relative;
+  z-index: 20;
 }
