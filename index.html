@@ -38,673 +38,681 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <div id="overlay"></div>
-      <div id="overlay-filter"></div>
-      <!-- Start Header -->
-      <header id="header">
-        <section id="header-info">
-          <div class="container">
-            <div class="wrapper-header">
-              <div class="left">
-                <i
-                  class="fa-solid fa-bullhorn fa-lg me-2"
-                  style="color: #ffffff; font-size: 16px"
-                ></i>
-                <a href="#" class="link-header"
-                  >Trung tâm tiêm chủng Long Châu <span>Xem chi tiết</span></a
-                >
-              </div>
-
-              <div class="right">
-                <div class="download">
+    <main id="main">
+      <div class="wrapper">
+        <div id="overlay"></div>
+        <div id="overlay-filter"></div>
+        <!-- Start Header -->
+        <header id="header">
+          <section id="header-info">
+            <div class="container">
+              <div class="wrapper-header">
+                <div class="left">
                   <i
-                    class="fa-solid fa-mobile-button me-2"
-                    style="color: #ffffff"
+                    class="fa-solid fa-bullhorn fa-lg me-2"
+                    style="color: #ffffff; font-size: 16px"
                   ></i>
-                  Tải ứng dụng
+                  <a href="#" class="link-header"
+                    >Trung tâm tiêm chủng Long Châu <span>Xem chi tiết</span></a
+                  >
+                </div>
 
-                  <div class="wrapper-qr">
-                    <img src="frontend/images/qr-code.webp" alt="Mã QR" />
+                <div class="right">
+                  <div class="download">
+                    <i
+                      class="fa-solid fa-mobile-button me-2"
+                      style="color: #ffffff"
+                    ></i>
+                    Tải ứng dụng
+
+                    <div class="wrapper-qr">
+                      <img src="frontend/images/qr-code.webp" alt="Mã QR" />
+                    </div>
+                  </div>
+
+                  <div class="contact">
+                    <i
+                      class="fa-solid fa-phone me-2"
+                      style="color: #ffffff"
+                    ></i>
+                    Tư vấn ngay: <a href="tel:1800 6928">1800 6928</a>
                   </div>
                 </div>
-
-                <div class="contact">
-                  <i class="fa-solid fa-phone me-2" style="color: #ffffff"></i>
-                  Tư vấn ngay: <a href="tel:1800 6928">1800 6928</a>
-                </div>
               </div>
-            </div>
 
-            <div class="header-top">
-              <div class="nav">
-                <div class="nav-logo">
-                  <a href="#" class="link-logo">
-                    <img
-                      src="frontend/images/logo-header.svg"
-                      alt="Logo"
-                      class="img-logo"
-                    />
-                  </a>
-                </div>
-
-                <div class="nav-filter">
-                  <div class="wrapper-filer">
-                    <form action="">
-                      <input
-                        type="text"
-                        name=""
-                        placeholder="Tìm tên thuốc, bệnh lý, thực phẩm chức năng..."
-                        id="search-input"
-                        onfocus="showFilter()"
+              <div class="header-top">
+                <div class="nav">
+                  <div class="nav-logo">
+                    <a href="#" class="link-logo">
+                      <img
+                        src="frontend/images/logo-header.svg"
+                        alt="Logo"
+                        class="img-logo"
                       />
+                    </a>
+                  </div>
 
-                      <button class="icon-search">
-                        <i
-                          class="fa-solid fa-magnifying-glass fa-lg"
-                          style="color: #0843ba; font-size: 16px"
-                        ></i>
-                      </button>
+                  <div class="nav-filter">
+                    <div class="wrapper-filer">
+                      <form action="">
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Tìm tên thuốc, bệnh lý, thực phẩm chức năng..."
+                          id="search-input"
+                          onfocus="showFilter()"
+                        />
 
-                      <div id="form-filter">
-                        <div class="wrapper-form-filter py-2">
-                          <div class="px-3 mt-2">
-                            <p>Tra cứu hàng đầu</p>
-                            <div class="filter-quick">
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>dung dịch vệ sinh</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>sữa rửa mặt</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>thuốc nhỏ mắt</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>D3</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>sắt</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>kem chống nắng</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>canxi</span>
-                                </a>
-                              </div>
-                              <div class="box-filte__quick">
-                                <a href="#">
-                                  <span>Kẽm</span>
-                                </a>
+                        <button class="icon-search">
+                          <i
+                            class="fa-solid fa-magnifying-glass fa-lg"
+                            style="color: #0843ba; font-size: 16px"
+                          ></i>
+                        </button>
+
+                        <div id="form-filter">
+                          <div class="wrapper-form-filter py-2">
+                            <div class="px-3 mt-2">
+                              <p>Tra cứu hàng đầu</p>
+                              <div class="filter-quick">
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>dung dịch vệ sinh</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>sữa rửa mặt</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>thuốc nhỏ mắt</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>D3</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>sắt</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>kem chống nắng</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>canxi</span>
+                                  </a>
+                                </div>
+                                <div class="box-filte__quick">
+                                  <a href="#">
+                                    <span>Kẽm</span>
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="nav-action">
+                    <div class="wrapper-action">
+                      <a
+                        class="link-sign-up show-modal"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalLogin"
+                      >
+                        <i
+                          class="fa-solid fa-user me-2"
+                          style="color: #ffffff"
+                        ></i>
+                        Đăng nhập
+                      </a>
+
+                      <a class="wrapper-cart">
+                        <i
+                          class="fa-solid fa-cart-shopping me-2"
+                          style="color: #ffffff"
+                        ></i>
+                        Giỏ hàng
+                      </a>
+                    </div>
                   </div>
                 </div>
 
-                <div class="nav-action">
-                  <div class="wrapper-action">
+                <ul class="list-search">
+                  <li class="item-search"><a href="#">dung dịch vệ sinh</a></li>
+                  <li class="item-search"><a href="#">sữa rửa mặt</a></li>
+                  <li class="item-search"><a href="#">thuốc nhỏ mắt</a></li>
+                  <li class="item-search"><a href="#">omega 3</a></li>
+                  <li class="item-search"><a href="#">sắt</a></li>
+                  <li class="item-search"><a href="#">men vi sinh</a></li>
+                  <li class="item-search"><a href="#">Dhc</a></li>
+                  <li class="item-search"><a href="#">Kẽm</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </header>
+        <!-- End Header  -->
+
+        <!-- Modal Login -->
+        <div
+          class="modal fade"
+          id="modalLogin"
+          tabindex="-1"
+          aria-labelledby="modalLogin"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="text-center">
+                  <h2 class="title-login">Đăng nhập</h2>
+                  <p class="text-login mb-3">
+                    Vui lòng đăng nhập để hưởng những đặc quyền dành cho thành
+                    viên.
+                  </p>
+                </div>
+                <form class="mb-2">
+                  <div class="wrapper-form-login">
+                    <input
+                      type="gmail"
+                      class="form-control mb-3"
+                      placeholder="Vui lòng nhập địa chỉ gmail"
+                      name="email"
+                    />
+                    <input
+                      type="password"
+                      class="form-control mb-3"
+                      placeholder="Vui lòng nhập password"
+                      name="password"
+                    />
+                    <button class="btn btn-primary btn-login">Đăng nhập</button>
+                  </div>
+                </form>
+
+                <div class="wrapper-register mb-3">
+                  <div class="register">
+                    <div class="line"></div>
+                    hoặc đăng ký
                     <a
-                      class="link-sign-up show-modal"
+                      class="link-register show-modal"
                       data-bs-toggle="modal"
-                      data-bs-target="#modalLogin"
+                      data-bs-target="#modalRegister"
+                      >Tại đây</a
+                    >
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <img
+                  src="frontend/images/auth-modal-footer.svg"
+                  alt="Logo-footer-login"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal -->
+
+        <!-- Start Nav -->
+        <nav id="navbar">
+          <div class="container wrapper-menu">
+            <ul class="list-menu">
+              <li class="item-menu dropdown">
+                <a data-bs-toggle="dropdown">
+                  Thực phẩm chức năng
+                  <i
+                    class="fa-solid fa-chevron-down ms-2"
+                    style="font-size: 14px"
+                  ></i>
+                </a>
+                <ul
+                  class="dropdown-menu wrapper-menu"
+                  aria-labelledby="thucpham"
+                >
+                  <div class="tab">
+                    <button
+                      class="tablinks"
+                      onmouseover="openTab(event, 'tab-1')"
+                      onmouseout="removeOverlayClass()"
                     >
                       <i
-                        class="fa-solid fa-user me-2"
-                        style="color: #ffffff"
+                        class="fa-solid fa-heart-pulse me-3"
+                        style="color: #0843ba"
                       ></i>
-                      Đăng nhập
-                    </a>
-
-                    <a class="wrapper-cart">
+                      Vitamin & Khoáng chất
+                    </button>
+                    <button
+                      class="tablinks"
+                      onmouseover="openTab(event, 'tab-2')"
+                      onmouseout="removeOverlayClass()"
+                    >
                       <i
-                        class="fa-solid fa-cart-shopping me-2"
-                        style="color: #ffffff"
+                        class="fa-solid fa-heart-pulse me-3"
+                        style="color: #0843ba"
                       ></i>
-                      Giỏ hàng
-                    </a>
+                      Sinh lý - Nội tiết tố
+                    </button>
                   </div>
-                </div>
-              </div>
 
-              <ul class="list-search">
-                <li class="item-search"><a href="#">dung dịch vệ sinh</a></li>
-                <li class="item-search"><a href="#">sữa rửa mặt</a></li>
-                <li class="item-search"><a href="#">thuốc nhỏ mắt</a></li>
-                <li class="item-search"><a href="#">omega 3</a></li>
-                <li class="item-search"><a href="#">sắt</a></li>
-                <li class="item-search"><a href="#">men vi sinh</a></li>
-                <li class="item-search"><a href="#">Dhc</a></li>
-                <li class="item-search"><a href="#">Kẽm</a></li>
-              </ul>
-            </div>
+                  <div id="tab-1" class="tabcontent">
+                    <div class="row section-product">
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="section-product-selling">
+                      <div class="title-selling mb-3">
+                        <span class="me-3"> Bán chạy nhất </span>
+                        <a href="#" class="link-product">
+                          <span>| Xem tất cả</span>
+                          <i
+                            class="fa-solid fa-angle-left ms-3"
+                            style="color: #2b5bc9"
+                          ></i>
+                        </a>
+                      </div>
+
+                      <div class="wrapper-list-product-selling">
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+
+                              <div class="box-percent__sale">-20%</div>
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+
+                          <div class="product-selling__price">
+                            <p class="price-new">570.000đ <span>/ Hộp</span></p>
+                            <p class="price-old">1460.000đ</p>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="tab-2" class="tabcontent">
+                    <div class="row section-product">
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Viên uống Sâm Nhung</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Viên uống Maca M Male Power</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">
+                              Viên uống Kaki Ekisu Tohchukasou Kenkan
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">Viên uống Ironmen Ocavill</p>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="wrapper-product_tab">
+                          <a href="#">
+                            <div class="product-img_tab">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Img-Product"
+                              />
+                            </div>
+                            <p class="ms-3">
+                              Viên uống Oyster Extract Vitatree
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="section-product-selling">
+                      <div class="title-selling mb-3">
+                        <span class="me-3"> Bán chạy nhất </span>
+                        <a href="#" class="link-product">
+                          <span>| Xem tất cả</span>
+                          <i
+                            class="fa-solid fa-angle-left ms-3"
+                            style="color: #2b5bc9"
+                          ></i>
+                        </a>
+                      </div>
+
+                      <div class="wrapper-list-product-selling">
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+
+                              <div class="box-percent__sale">-20%</div>
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên nang mềm NatureCare Omega 369 bổ sung thực
+                              phẩm chức năng
+                            </a>
+                          </div>
+
+                          <div class="product-selling__price">
+                            <p class="price-new">570.000đ <span>/ Hộp</span></p>
+                            <p class="price-old">1460.000đ</p>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
+                            </a>
+                          </div>
+                        </div>
+                        <div class="box-product">
+                          <div class="product-selling__img">
+                            <a href="#">
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
+                                alt="Hỉnh ảnh sản phẩm bán chạy"
+                              />
+                            </a>
+                          </div>
+                          <div class="product-selling__content">
+                            <a href="#">
+                              Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+                </ul>
+              </li>
+              <li class="item-menu">
+                <a href="#"
+                  >Dược phẩm mỹ<i
+                    class="fa-solid fa-chevron-down ms-2"
+                    style="font-size: 14px"
+                  ></i
+                ></a>
+              </li>
+              <li class="item-menu">
+                <a href="#"
+                  >Chăm sóc cá nhân<i
+                    class="fa-solid fa-chevron-down ms-2"
+                    style="font-size: 14px"
+                  ></i
+                ></a>
+              </li>
+              <li class="item-menu">
+                <a href="#"
+                  >Thuốc<i
+                    class="fa-solid fa-chevron-down ms-2"
+                    style="font-size: 14px"
+                  ></i
+                ></a>
+              </li>
+              <li class="item-menu">
+                <a href="#"
+                  >Thiết bị y tế<i
+                    class="fa-solid fa-chevron-down ms-2"
+                    style="font-size: 14px"
+                  ></i
+                ></a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Tiêm chủng</a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Bệnh</a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Góc sức khỏe</a>
+              </li>
+              <li class="item-menu">
+                <a href="#">Hệ thống nhà thuốc</a>
+              </li>
+            </ul>
           </div>
-        </section>
-      </header>
-      <!-- End Header  -->
+        </nav>
+        <!-- End Nav  -->
 
-      <!-- Modal Login -->
-      <div
-        class="modal fade"
-        id="modalLogin"
-        tabindex="-1"
-        aria-labelledby="modalLogin"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="text-center">
-                <h2 class="title-login">Đăng nhập</h2>
-                <p class="text-login mb-3">
-                  Vui lòng đăng nhập để hưởng những đặc quyền dành cho thành
-                  viên.
-                </p>
-              </div>
-              <form class="mb-2">
-                <div class="wrapper-form-login">
-                  <input
-                    type="gmail"
-                    class="form-control mb-3"
-                    placeholder="Vui lòng nhập địa chỉ gmail"
-                    name="email"
-                  />
-                  <input
-                    type="password"
-                    class="form-control mb-3"
-                    placeholder="Vui lòng nhập password"
-                    name="password"
-                  />
-                  <button class="btn btn-primary btn-login">Đăng nhập</button>
-                </div>
-              </form>
-
-              <div class="wrapper-register mb-3">
-                <div class="register">
-                  <div class="line"></div>
-                  hoặc đăng ký
-                  <a
-                    class="link-register show-modal"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalRegister"
-                    >Tại đây</a
-                  >
-                  <div class="line"></div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <img
-                src="frontend/images/auth-modal-footer.svg"
-                alt="Logo-footer-login"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-
-      <!-- Start Nav -->
-      <nav id="navbar">
-        <div class="container wrapper-menu">
-          <ul class="list-menu">
-            <li class="item-menu dropdown">
-              <a data-bs-toggle="dropdown">
-                Thực phẩm chức năng
-                <i
-                  class="fa-solid fa-chevron-down ms-2"
-                  style="font-size: 14px"
-                ></i>
-              </a>
-              <ul class="dropdown-menu wrapper-menu" aria-labelledby="thucpham">
-                <div class="tab">
-                  <button
-                    class="tablinks"
-                    onmouseover="openTab(event, 'tab-1')"
-                    onmouseout="removeOverlayClass()"
-                  >
-                    <i
-                      class="fa-solid fa-heart-pulse me-3"
-                      style="color: #0843ba"
-                    ></i>
-                    Vitamin & Khoáng chất
-                  </button>
-                  <button
-                    class="tablinks"
-                    onmouseover="openTab(event, 'tab-2')"
-                    onmouseout="removeOverlayClass()"
-                  >
-                    <i
-                      class="fa-solid fa-heart-pulse me-3"
-                      style="color: #0843ba"
-                    ></i>
-                    Sinh lý - Nội tiết tố
-                  </button>
-                </div>
-
-                <div id="tab-1" class="tabcontent">
-                  <div class="row section-product">
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00021988_anica_phytextra_60v_5137_6347_large_81a2361ecd.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Bổ sung Canxi & Vitamin D</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="section-product-selling">
-                    <div class="title-selling mb-3">
-                      <span class="me-3"> Bán chạy nhất </span>
-                      <a href="#" class="link-product">
-                        <span>| Xem tất cả</span>
-                        <i
-                          class="fa-solid fa-angle-left ms-3"
-                          style="color: #2b5bc9"
-                        ></i>
-                      </a>
-                    </div>
-
-                    <div class="wrapper-list-product-selling">
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-
-                            <div class="box-percent__sale">-20%</div>
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-
-                        <div class="product-selling__price">
-                          <p class="price-new">570.000đ <span>/ Hộp</span></p>
-                          <p class="price-old">1460.000đ</p>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/375x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09006_a1b4671cf5.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div id="tab-2" class="tabcontent">
-                  <div class="row section-product">
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Viên uống Sâm Nhung</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Viên uống Maca M Male Power</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">
-                            Viên uống Kaki Ekisu Tohchukasou Kenkan
-                          </p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Viên uống Ironmen Ocavill</p>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                      <div class="wrapper-product_tab">
-                        <a href="#">
-                          <div class="product-img_tab">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Img-Product"
-                            />
-                          </div>
-                          <p class="ms-3">Viên uống Oyster Extract Vitatree</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="section-product-selling">
-                    <div class="title-selling mb-3">
-                      <span class="me-3"> Bán chạy nhất </span>
-                      <a href="#" class="link-product">
-                        <span>| Xem tất cả</span>
-                        <i
-                          class="fa-solid fa-angle-left ms-3"
-                          style="color: #2b5bc9"
-                        ></i>
-                      </a>
-                    </div>
-
-                    <div class="wrapper-list-product-selling">
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-
-                            <div class="box-percent__sale">-20%</div>
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên nang mềm NatureCare Omega 369 bổ sung thực phẩm
-                            chức năng
-                          </a>
-                        </div>
-
-                        <div class="product-selling__price">
-                          <p class="price-new">570.000đ <span>/ Hộp</span></p>
-                          <p class="price-old">1460.000đ</p>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
-                          </a>
-                        </div>
-                      </div>
-                      <div class="box-product">
-                        <div class="product-selling__img">
-                          <a href="#">
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/IMG_3754_319065b5fe.jpg"
-                              alt="Hỉnh ảnh sản phẩm bán chạy"
-                            />
-                          </a>
-                        </div>
-                        <div class="product-selling__content">
-                          <a href="#">
-                            Viên uống Sâm Nhung hỗ trợ tráng dương, tăng cường
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="clearfix"></div>
-              </ul>
-            </li>
-            <li class="item-menu">
-              <a href="#"
-                >Dược phẩm mỹ<i
-                  class="fa-solid fa-chevron-down ms-2"
-                  style="font-size: 14px"
-                ></i
-              ></a>
-            </li>
-            <li class="item-menu">
-              <a href="#"
-                >Chăm sóc cá nhân<i
-                  class="fa-solid fa-chevron-down ms-2"
-                  style="font-size: 14px"
-                ></i
-              ></a>
-            </li>
-            <li class="item-menu">
-              <a href="#"
-                >Thuốc<i
-                  class="fa-solid fa-chevron-down ms-2"
-                  style="font-size: 14px"
-                ></i
-              ></a>
-            </li>
-            <li class="item-menu">
-              <a href="#"
-                >Thiết bị y tế<i
-                  class="fa-solid fa-chevron-down ms-2"
-                  style="font-size: 14px"
-                ></i
-              ></a>
-            </li>
-            <li class="item-menu">
-              <a href="#">Tiêm chủng</a>
-            </li>
-            <li class="item-menu">
-              <a href="#">Bệnh</a>
-            </li>
-            <li class="item-menu">
-              <a href="#">Góc sức khỏe</a>
-            </li>
-            <li class="item-menu">
-              <a href="#">Hệ thống nhà thuốc</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- End Nav  -->
-
-      <!-- Start Main -->
-      <main id="main">
+        <!-- Start Main -->
         <section class="slider">
           <div class="container wrapper-slider">
             <div class="row">
@@ -5886,318 +5894,318 @@
             />
           </picture>
         </section> -->
-      </main>
-      <!-- End Main -->
+        <!-- End Main -->
 
-      <!-- Start Footer -->
-      <footer id="footer">
-        <section class="pharmacy-system">
+        <!-- Start Footer -->
+        <footer id="footer">
+          <section class="pharmacy-system">
+            <div class="container">
+              <div class="wrapper__pharmacy-system">
+                <a href="#">
+                  <i
+                    class="fa-solid fa-location-dot me-2"
+                    style="color: #ffffff"
+                  ></i>
+                  Xem hệ thống nhà thuốc trên toàn quốc
+                </a>
+                <a href="#" class="btn-list-pharmacy">
+                  Xem danh sách nhà thuốc
+                </a>
+              </div>
+            </div>
+          </section>
+
           <div class="container">
-            <div class="wrapper__pharmacy-system">
-              <a href="#">
-                <i
-                  class="fa-solid fa-location-dot me-2"
-                  style="color: #ffffff"
-                ></i>
-                Xem hệ thống nhà thuốc trên toàn quốc
-              </a>
-              <a href="#" class="btn-list-pharmacy">
-                Xem danh sách nhà thuốc
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="row wrapper-footer">
-                <div class="col-12 col-md-4 col-lg-4 content-footer">
-                  <div style="margin-right: 32px">
-                    <h4 class="title">VỀ CHÚNG TÔI</h4>
-                    <ul class="list-link">
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Giới thiệu</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Hệ thống cửa hàng</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Giấy phép kinh doanh</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Quy chế hoạt động</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách đặt cọc</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách nội dung</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách đổi trả thuốc</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách giao hàng</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách bảo mật</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chính sách thanh toán</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Kiểm tra hóa đơn điện tử</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1"
-                          >Chính sách thu thập và xử lý dữ liệu cá nhân</a
-                        >
-                      </li>
-                    </ul>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="row wrapper-footer">
+                  <div class="col-12 col-md-4 col-lg-4 content-footer">
+                    <div style="margin-right: 32px">
+                      <h4 class="title">VỀ CHÚNG TÔI</h4>
+                      <ul class="list-link">
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Giới thiệu</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Hệ thống cửa hàng</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Giấy phép kinh doanh</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Quy chế hoạt động</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách đặt cọc</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách nội dung</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách đổi trả thuốc</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách giao hàng</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách bảo mật</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chính sách thanh toán</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Kiểm tra hóa đơn điện tử</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1"
+                            >Chính sách thu thập và xử lý dữ liệu cá nhân</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-4 col-lg-4 content-footer">
-                  <div style="margin-right: 32px">
-                    <h4 class="title">DANH MỤC</h4>
-                    <ul class="list-link">
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Thực phẩm chức năng</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Dược mỹ phẩm</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Chăm sóc cá nhân</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Thuốc</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Trang thiết bị y tế</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Đặt thuốc online</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Trung tâm Tiêm chủng</a>
-                      </li>
-                    </ul>
+                  <div class="col-12 col-md-4 col-lg-4 content-footer">
+                    <div style="margin-right: 32px">
+                      <h4 class="title">DANH MỤC</h4>
+                      <ul class="list-link">
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Thực phẩm chức năng</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Dược mỹ phẩm</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Chăm sóc cá nhân</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Thuốc</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Trang thiết bị y tế</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Đặt thuốc online</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Trung tâm Tiêm chủng</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-4 col-lg-4 content-footer">
-                  <div style="margin-right: 32px">
-                    <h4 class="title">TÌM HIỂU THÊM</h4>
-                    <ul class="list-link">
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Góc sức khoẻ</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Tra cứu thuốc</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Tra cứu dược chất</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Tra cứu dược liệu</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Bệnh thường gặp</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Bệnh viện</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Hoạt động xã hội</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Tin tức tuyển dụng</a>
-                      </li>
-                      <li class="item-link mt-1">
-                        <a href="" class="py-1">Tin tức sự kiện</a>
-                      </li>
-                    </ul>
+                  <div class="col-12 col-md-4 col-lg-4 content-footer">
+                    <div style="margin-right: 32px">
+                      <h4 class="title">TÌM HIỂU THÊM</h4>
+                      <ul class="list-link">
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Góc sức khoẻ</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Tra cứu thuốc</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Tra cứu dược chất</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Tra cứu dược liệu</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Bệnh thường gặp</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Bệnh viện</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Hoạt động xã hội</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Tin tức tuyển dụng</a>
+                        </li>
+                        <li class="item-link mt-1">
+                          <a href="" class="py-1">Tin tức sự kiện</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="row wrapper-footer">
-                <div class="col-12 col-md-6 col-lg-6 content-footer">
-                  <div style="margin-right: 32px">
-                    <h4 class="title">TỔNG ĐÀI</h4>
-                    <div class="content">
-                      <p class="mb-0">Tư vấn mua hàng</p>
-                      <a href="tel:18006928">
-                        18006928<span> ( Nhánh 1 )</span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <p class="mb-0">Trung tâm Vắc xin</p>
-                      <a href="tel:18006928 ">
-                        18006928 <span> ( Nhánh 1 )</span>
-                      </a>
-                    </div>
-                    <div class="content">
-                      <p class="mb-0">Góp ý, khiếu nại</p>
-                      <a href="tel:18006928">
-                        18006928<span> ( Nhánh 3 )</span>
-                      </a>
-                    </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="row wrapper-footer">
+                  <div class="col-12 col-md-6 col-lg-6 content-footer">
+                    <div style="margin-right: 32px">
+                      <h4 class="title">TỔNG ĐÀI</h4>
+                      <div class="content">
+                        <p class="mb-0">Tư vấn mua hàng</p>
+                        <a href="tel:18006928">
+                          18006928<span> ( Nhánh 1 )</span>
+                        </a>
+                      </div>
+                      <div class="content">
+                        <p class="mb-0">Trung tâm Vắc xin</p>
+                        <a href="tel:18006928 ">
+                          18006928 <span> ( Nhánh 1 )</span>
+                        </a>
+                      </div>
+                      <div class="content">
+                        <p class="mb-0">Góp ý, khiếu nại</p>
+                        <a href="tel:18006928">
+                          18006928<span> ( Nhánh 3 )</span>
+                        </a>
+                      </div>
 
-                    <div class="content">
-                      <p class="mb-0">CHỨNG NHẬN BỞI</p>
-                      <div class="wrapper-certification">
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/bo_cong_thuong_a8e5750f57.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                      <div class="content">
+                        <p class="mb-0">CHỨNG NHẬN BỞI</p>
+                        <div class="wrapper-certification">
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/bo_cong_thuong_a8e5750f57.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/smalls/DMCA_1_1f84305343.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/smalls/DMCA_1_1f84305343.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <p class="mb-0">HỖ TRỢ THANH TOÁN</p>
-                      <div class="wrapper-pay">
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/visa_fdc3324c35.svg "
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                      <div class="content">
+                        <p class="mb-0">HỖ TRỢ THANH TOÁN</p>
+                        <div class="wrapper-pay">
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/visa_fdc3324c35.svg "
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/mtc_1ed684ff7c.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/mtc_1ed684ff7c.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/jcb_7655e615ce.svg "
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/jcb_7655e615ce.svg "
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/amex_2610a984a5.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/amex_2610a984a5.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/smalls/vnpay_1f73f546c4.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/smalls/vnpay_1f73f546c4.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/zalopay_884e503cf9.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/zalopay_884e503cf9.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div>
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/zalopay_884e503cf9.svg"
-                                alt="Logo certification"
-                              />
-                            </picture>
-                          </a>
+                          <div>
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/zalopay_884e503cf9.svg"
+                                  alt="Logo certification"
+                                />
+                              </picture>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-12 col-md-6 col-lg-6 content-footer">
-                  <div style="margin-right: 32px">
-                    <h4 class="title">KẾT NỐI VỚI CHÚNG TÔI</h4>
-                    <div class="content">
-                      <div class="wrapper-social">
-                        <div class="box-social">
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/smalls/facebook_logo_3152b9bb16.svg"
-                                alt="Logo social"
-                              />
-                            </picture>
-                          </a>
-                        </div>
+                  <div class="col-12 col-md-6 col-lg-6 content-footer">
+                    <div style="margin-right: 32px">
+                      <h4 class="title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                      <div class="content">
+                        <div class="wrapper-social">
+                          <div class="box-social">
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/smalls/facebook_logo_3152b9bb16.svg"
+                                  alt="Logo social"
+                                />
+                              </picture>
+                            </a>
+                          </div>
 
-                        <div class="box-social">
-                          <a href="#">
-                            <picture>
-                              <img
-                                src="https://cdn1.nhathuoclongchau.com.vn/smalls/Logo_Zalo_979d41d52b.svg"
-                                alt="Logo social"
-                              />
-                            </picture>
-                          </a>
+                          <div class="box-social">
+                            <a href="#">
+                              <picture>
+                                <img
+                                  src="https://cdn1.nhathuoclongchau.com.vn/smalls/Logo_Zalo_979d41d52b.svg"
+                                  alt="Logo social"
+                                />
+                              </picture>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="wrapper-qr">
-                        <h4>TẢI ỨNG DỤNG LONG CHÂU</h4>
-                        <div class="qr-code">
-                          <picture>
-                            <img
-                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/100x100/https://cms-prod.s3-sgn09.fptcloud.com/smalls/QR_100x100_3x_1b3ed147f3.png"
-                              alt="QR Code"
-                            />
-                          </picture>
+                      <div class="content">
+                        <div class="wrapper-qr">
+                          <h4>TẢI ỨNG DỤNG LONG CHÂU</h4>
+                          <div class="qr-code">
+                            <picture>
+                              <img
+                                src="https://cdn.nhathuoclongchau.com.vn/unsafe/100x100/https://cms-prod.s3-sgn09.fptcloud.com/smalls/QR_100x100_3x_1b3ed147f3.png"
+                                alt="QR Code"
+                              />
+                            </picture>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -6206,51 +6214,49 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="container">
-          <div class="wrapper-copy-right">
-            <p class="mb-0">
-              © 2007 - 2022 Công ty Cổ Phần Dược Phẩm FPT Long Châu Số ĐKKD
-              0315275368 cấp ngày 17/09/2018 tại Sở Kế hoạch Đầu tư TPHCM
-            </p>
-            <p class="address mb-0">
-              Địa chỉ: 379-381 Hai Bà Trưng, P. Võ Thị Sáu, Q.3, TP. HCM
-            </p>
-            <ul>
-              <li>
-                Số điện thoại:
-                <a target="_blank" rel="nofollow" href="tel:02873023456"
-                  >(028)73023456&nbsp;</a
-                >
-              </li>
-              <li>
-                Email:
-                <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="mailto:sale@nhathuoclongchau.com.vn"
-                  >sale@nhathuoclongchau.com.vn</a
-                >
-              </li>
-              <li>Người quản lý nội dung: Nguyễn Bạch Điệp</li>
-            </ul>
+          <div class="container">
+            <div class="wrapper-copy-right">
+              <p class="mb-0">
+                © 2007 - 2022 Công ty Cổ Phần Dược Phẩm FPT Long Châu Số ĐKKD
+                0315275368 cấp ngày 17/09/2018 tại Sở Kế hoạch Đầu tư TPHCM
+              </p>
+              <p class="address mb-0">
+                Địa chỉ: 379-381 Hai Bà Trưng, P. Võ Thị Sáu, Q.3, TP. HCM
+              </p>
+              <ul>
+                <li>
+                  Số điện thoại:
+                  <a target="_blank" rel="nofollow" href="tel:02873023456"
+                    >(028)73023456&nbsp;</a
+                  >
+                </li>
+                <li>
+                  Email:
+                  <a
+                    target="_blank"
+                    rel="nofollow"
+                    href="mailto:sale@nhathuoclongchau.com.vn"
+                    >sale@nhathuoclongchau.com.vn</a
+                  >
+                </li>
+                <li>Người quản lý nội dung: Nguyễn Bạch Điệp</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </footer>
-      <!-- End Footer -->
+        </footer>
+        <!-- End Footer -->
 
-      <!-- Button Chat -->
-      <div id="box-chat">
-        
+        <!-- Button Chat -->
+        <div id="box-chat"></div>
+        <!-- Button Scroll Top -->
+        <div id="scrollBtn" title="Go to top">
+          <button onclick="scrollToTop()">
+            <i class="fa-solid fa-up-long" style="color: #ffffff"></i>
+          </button>
+        </div>
       </div>
-      <!-- Button Scroll Top -->
-      <div id="scrollBtn" title="Go to top">
-        <button onclick="scrollToTop()">
-          <i class="fa-solid fa-up-long" style="color: #ffffff"></i>
-        </button>
-      </div>
-    </div>
+    </main>
 
     <!-- Jquery -->
     <script
@@ -6276,204 +6282,7 @@
     ></script>
 
     <script src="frontend/js/main.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $(".my-slider").slick({
-          slidesToShow: 5,
-          slidesToScroll: 5,
-          arrows: true,
-          dots: false,
-          speed: 300,
-          infinite: false,
-          autoplaySpeed: 5000,
-          autoplay: false,
-          responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-
-        $(".slider-health").slick({
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          arrows: true,
-          dots: false,
-          speed: 300,
-          infinite: false,
-          autoplaySpeed: 5000,
-          autoplay: false,
-          responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-
-        $(".slider-product-subject").slick({
-          slidesToShow: 6,
-          slidesToScroll: 12,
-          arrows: true,
-          dots: false,
-          speed: 300,
-          infinite: false,
-          autoplaySpeed: 5000,
-          autoplay: false,
-          responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-
-        $(".slider-stick").slick({
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          arrows: true,
-          dots: false,
-          speed: 300,
-          infinite: false,
-          autoplaySpeed: 5000,
-          autoplay: false,
-          responsive: [
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 3,
-              },
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-              },
-            },
-          ],
-        });
-      });
-    </script>
-
-    <script>
-      function openTab(evt, tabId) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabId).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuItems = document.querySelectorAll(".item-menu");
-        const overlay = document.getElementById("overlay");
-
-        menuItems.forEach((item) => {
-          item.addEventListener("mouseover", () => {
-            overlay.classList.add("active");
-          });
-
-          item.addEventListener("mouseout", () => {
-            overlay.classList.remove("active");
-          });
-        });
-      });
-    </script>
-
-    <script>
-      function showFilter() {
-        const formFilter = document.getElementById("form-filter");
-        const overlayFiler = document.getElementById("overlay-filter");
-        overlayFiler.classList.add("active");
-        formFilter.style.display = "block";
-      }
-
-      function hideFilter(event) {
-        const formFilter = document.getElementById("form-filter");
-        const searchInput = document.getElementById("search-input");
-        const overlayFiler = document.getElementById("overlay-filter");
-
-        if (
-          event.target !== searchInput &&
-          !formFilter.contains(event.target)
-        ) {
-          overlayFiler.classList.remove("active");
-          formFilter.style.display = "none";
-        }
-      }
-
-      document.addEventListener("click", function (event) {
-        hideFilter(event);
-      });
-
-      document
-        .getElementById("search-input")
-        .addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
-
-      document
-        .getElementById("form-filter")
-        .addEventListener("click", function (event) {
-          event.stopPropagation();
-        });
-    </script>
-
-    <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        var scrollBtn = document.getElementById("scrollBtn");
-        if (
-          document.body.scrollTop > 600 ||
-          document.documentElement.scrollTop > 600
-        ) {
-          scrollBtn.style.display = "block";
-        } else {
-          scrollBtn.style.display = "none";
-        }
-      }
-
-      function scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+    <script src="frontend/js/scrollTop.js"></script>
+    <script src="frontend/js/slider.js"></script>
   </body>
 </html>
