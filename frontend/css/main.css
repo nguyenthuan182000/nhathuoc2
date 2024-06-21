@@ -1382,21 +1382,24 @@ a {
 }
 
 /* Pharmacy system */
-#footer .pharmacy-system {
+#footer .pharmacy-system,
+#footer-menu .pharmacy-system {
   background: rgb(33 103 221/1);
   padding: 16px 0;
   min-height: 80px;
   display: flex;
 }
 
-#footer .pharmacy-system .wrapper__pharmacy-system {
+#footer .pharmacy-system .wrapper__pharmacy-system ,
+#footer-menu .pharmacy-system .wrapper__pharmacy-system {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: auto;
 }
 
-#footer .pharmacy-system .wrapper__pharmacy-system a {
+#footer .pharmacy-system .wrapper__pharmacy-system a ,
+#footer-menu .pharmacy-system .wrapper__pharmacy-system a {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 0;
@@ -1404,7 +1407,8 @@ a {
   color: var(--color-white);
 }
 
-#footer .pharmacy-system .wrapper__pharmacy-system .btn-list-pharmacy {
+#footer .pharmacy-system .wrapper__pharmacy-system .btn-list-pharmacy,
+#footer-menu .pharmacy-system .wrapper__pharmacy-system .btn-list-pharmacy  {
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
@@ -1556,6 +1560,14 @@ a {
   border-radius: 50%;
 }
 
-#footer .wrapper-copy-right ul li a{ 
+#footer .wrapper-copy-right ul li a {
   color: var(--color-primary);
+}
+
+#footer-menu {
+  display: none;
+}
+
+#menu-mobile {
+  display: none;
 }
