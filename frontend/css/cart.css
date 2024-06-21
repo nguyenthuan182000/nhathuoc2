@@ -1,5 +1,6 @@
-.wrapper-cart {
+#wrapper-main {
   background-color: #edf0f3;
+  padding-bottom: 36px;
 }
 
 .wrapper-cart .link-back__home {
@@ -26,7 +27,8 @@
 }
 
 .wrapper-cart .card {
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
+  border: none;
 }
 
 .wrapper-cart .card-header {
@@ -432,4 +434,74 @@
   font-weight: 500;
   background: linear-gradient(315deg, #1250dc 0%, #306de4 100%);
   border-radius: 42px;
+}
+
+.wrapper-cart .wrapper-right .agree {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.wrapper-cart .wrapper-right .agree div {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.02em;
+  color: #020b27;
+}
+
+.wrapper-cart .wrapper-right .agree a {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.02em;
+  color: rgb(2, 11, 39);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.wrapper-cart .wrapper-right .agree span {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.02em;
+  color: rgb(2, 11, 39);
+  font-weight: 500;
+}
+
+.wrapper-cart .footer {
+  height: 24px;
+  background: white;
+  mask: radial-gradient(
+        11.52px at 50% calc(100% - 15.45px),
+        rgb(0, 0, 0) 99%,
+        rgba(0, 0, 0, 0) 101%
+      )
+      calc(50% - 20.6px) 0px / 41.2px 100%,
+    radial-gradient(
+        11.52px at 50% calc(100% + 5.15px),
+        rgba(0, 0, 0, 0) 99%,
+        rgb(0, 0, 0) 101%
+      )
+      50% calc(100% - 10.3px) / 41.2px 100% repeat-x;
+}
+
+.product-view__cart .wrapper-product {
+  margin-top: 20px;
+}
+
+.product-view__cart .wrapper-product .title {
+  margin-bottom: 16px;
+}
+
+.product-view__cart .wrapper-product .title h2 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0025em;
+  font-weight: 600;
+}
+
+.product-view__cart .wrapper-slider .slick-initialized .slick-disabled {
+  display: none !important;
+}
+
+.product-view__cart .wrapper-slider .slick-initialized .slick-track {
+  display: flex;
+  gap: 12px;
 }

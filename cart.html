@@ -714,195 +714,674 @@
         <!-- End Nav  -->
 
         <!-- Start Main -->
-        <div class="wrapper-cart">
-          <form action="">
-            <div class="container">
-              <div class="link-back__home">
-                <a href="#">
-                  <i
-                    class="fa-solid fa-angle-left me-2"
-                    style="color: #3c6cdc"
-                  ></i>
-                  <span>Tiếp tục mua sắm</span></a
-                >
-              </div>
+        <div id="wrapper-main">
+          <div class="wrapper-cart">
+            <form action="">
+              <div class="container">
+                <div class="link-back__home">
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-angle-left me-2"
+                      style="color: #3c6cdc"
+                    ></i>
+                    <span>Tiếp tục mua sắm</span></a
+                  >
+                </div>
 
-              <div class="row">
-                <div class="col-12 col-md-8 col-lg-8">
-                  <div class="card wrapper-left">
-                    <div class="card-header">
-                      <div class="cart-table__header">
-                        <div class="col-checkbox">
-                          <div class="form-check">
+                <div class="row">
+                  <div class="col-12 col-md-8 col-lg-8">
+                    <div class="card wrapper-left">
+                      <div class="card-header">
+                        <div class="cart-table__header">
+                          <div class="col-checkbox">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="checkAll"
+                                id="checkAll"
+                              />
+                              <label class="form-check-label" for="checkAll">
+                                Chọn tất cả (1)
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="col-price">
+                            <span>Giá thành</span>
+                          </div>
+
+                          <div class="col-quantity">
+                            <span>Số lượng</span>
+                          </div>
+
+                          <div class="col-unit">
+                            <span>Đơn vị</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="cart-table__body">
+                          <div class="col-checkbox__body">
                             <input
                               class="form-check-input"
                               type="radio"
-                              name="checkAll"
-                              id="checkAll"
+                              name="checkbox_1"
+                              id="checkbox_1"
                             />
-                            <label class="form-check-label" for="checkAll">
-                              Chọn tất cả (1)
-                            </label>
-                          </div>
-                        </div>
 
-                        <div class="col-price">
-                          <span>Giá thành</span>
-                        </div>
-
-                        <div class="col-quantity">
-                          <span>Số lượng</span>
-                        </div>
-
-                        <div class="col-unit">
-                          <span>Đơn vị</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card-body">
-                      <div class="cart-table__body">
-                        <div class="col-checkbox__body">
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="checkbox_1"
-                            id="checkbox_1"
-                          />
-
-                          <div class="info-product">
-                            <a href="#" class="link_img">
-                              <picture>
-                                <img
-                                  src="https://cdn.nhathuoclongchau.com.vn/unsafe/48x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_08289_8048425d59.jpg"
-                                  alt="Image Product"
-                                />
-                              </picture>
-                            </a>
-
-                            <div class="wrapper-link">
-                              <a href="#" class="link_content">
-                                Siro Multi Vitamin Hatro hỗ trợ tăng cường sức
-                                khỏe, nâng cao sức đề kháng (120ml)
+                            <div class="info-product">
+                              <a href="#" class="link_img">
+                                <picture>
+                                  <img
+                                    src="https://cdn.nhathuoclongchau.com.vn/unsafe/48x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_08289_8048425d59.jpg"
+                                    alt="Image Product"
+                                  />
+                                </picture>
                               </a>
+
+                              <div class="wrapper-link">
+                                <a href="#" class="link_content">
+                                  Siro Multi Vitamin Hatro hỗ trợ tăng cường sức
+                                  khỏe, nâng cao sức đề kháng (120ml)
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-price__body">
-                          <span>150.000đ </span>
-                        </div>
-
-                        <div class="col-quantity__body">
-                          <div class="d-flex align-items-center">
-                            <input
-                              class="numberstyle"
-                              type="text"
-                              min="1"
-                              step="1"
-                              value="1"
-                            />
+                          <div class="col-price__body">
+                            <span>150.000đ </span>
                           </div>
-                        </div>
 
-                        <div class="col-unit__body">
-                          <div class="dropdown m-auto">
-                            <button
-                              class="btn-dropdown"
-                              type="button"
-                              id="dropdownMenuButton2"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <span>Hộp</span>
-                              <span
-                                ><i
-                                  class="fa-solid fa-angle-down"
-                                  style="font-size: 14px"
-                                ></i
-                              ></span>
-                            </button>
-                            <div class="dropdown-menu">
-                              <div class="wrapper-drop__menu">
-                                <div class="icon">
-                                  <i
-                                    class="fa-solid fa-circle-check"
-                                    style="color: #3c6cdc; margin-right: 8px"
-                                  ></i>
-                                </div>
-                                <div class="content">
-                                  <span class="product">Hộp</span>
-                                  <span class="price">150.000đ</span>
+                          <div class="col-quantity__body">
+                            <div class="d-flex align-items-center">
+                              <input
+                                class="numberstyle"
+                                type="text"
+                                min="1"
+                                step="1"
+                                value="1"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-unit__body">
+                            <div class="dropdown m-auto">
+                              <button
+                                class="btn-dropdown"
+                                type="button"
+                                id="dropdownMenuButton2"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <span>Hộp</span>
+                                <span
+                                  ><i
+                                    class="fa-solid fa-angle-down"
+                                    style="font-size: 14px"
+                                  ></i
+                                ></span>
+                              </button>
+                              <div class="dropdown-menu">
+                                <div class="wrapper-drop__menu">
+                                  <div class="icon">
+                                    <i
+                                      class="fa-solid fa-circle-check"
+                                      style="color: #3c6cdc; margin-right: 8px"
+                                    ></i>
+                                  </div>
+                                  <div class="content">
+                                    <span class="product">Hộp</span>
+                                    <span class="price">150.000đ</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="col-delete__body">
-                          <span>
-                            <i
-                              class="fa-solid fa-trash"
-                              style="color: #657384; font-size: 16px"
-                            ></i>
-                          </span>
+                          <div class="col-delete__body">
+                            <span>
+                              <i
+                                class="fa-solid fa-trash"
+                                style="color: #657384; font-size: 16px"
+                              ></i>
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-12 col-md-8 col-lg-4">
+                    <div class="card wrapper-right">
+                      <div class="card-body">
+                        <div class="btn-code">
+                          <button>
+                            <span>Áp dụng ưu đãi để được giảm giá</span>
+                            <span
+                              ><i
+                                class="fa-solid fa-angle-right"
+                                style="color: #3c6cdc"
+                              ></i
+                            ></span>
+                          </button>
+                        </div>
+
+                        <div class="total-price">
+                          <div class="price">
+                            <span class="title">Tổng tiền</span>
+                            <span class="number">0đ</span>
+                          </div>
+                          <div class="discount">
+                            <span class="title">Tổng tiền</span>
+                            <span class="number">0đ</span>
+                          </div>
+                          <div class="discount-voucher">
+                            <span class="title">Tổng tiền</span>
+                            <span class="number">0đ</span>
+                          </div>
+                        </div>
+
+                        <div class="into-money">
+                          <div class="wrapper-into">
+                            <div class="title">Thành tiền</div>
+                            <div class="price">0đ</div>
+                          </div>
+                        </div>
+
+                        <div class="btn-buy">
+                          <button>Mua hàng</button>
+                        </div>
+
+                        <div class="agree">
+                          <div>
+                            Bằng việc tiến hành đặt mua hàng, bạn đồng ý với
+                          </div>
+                          <a href="#">Điều khoản dịch vụ</a>
+                          <span> và </span>
+                          <a href="">Chính sách xử lý dữ liệu cá nhân</a>
+                          <div>của Nhà thuốc FPT Long Châu</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer"></div>
+                  </div>
                 </div>
+              </div>
+            </form>
+          </div>
 
-                <div class="col-12 col-md-8 col-lg-4">
-                  <div class="card wrapper-right">
-                    <div class="card-body">
-                      <div class="btn-code">
-                        <button>
-                          <span>Áp dụng ưu đãi để được giảm giá</span>
-                          <span
-                            ><i
-                              class="fa-solid fa-angle-right"
-                              style="color: #3c6cdc"
-                            ></i
-                          ></span>
-                        </button>
-                      </div>
-
-                      <div class="total-price">
+          <div class="product-view__cart">
+            <div class="container">
+              <div class="wrapper-product">
+                <div class="title">
+                  <h2 class="mb-0">Sản phẩm vừa xem</h2>
+                </div>
+                
+                <div class="wrapper-slider">
+                  <div class="slider-product-subject">
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
                         <div class="price">
-                          <span class="title">Tổng tiền</span>
-                          <span class="number">0đ</span>
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
                         </div>
-                        <div class="discount">
-                          <span class="title">Tổng tiền</span>
-                          <span class="number">0đ</span>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
                         </div>
-                        <div class="discount-voucher">
-                          <span class="title">Tổng tiền</span>
-                          <span class="number">0đ</span>
-                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
                       </div>
-
-                      <div class="into-money">
-                        <div class="wrapper-into">
-                          <div class="title">Thành tiền</div>
-                          <div class="price">0đ</div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
                         </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
                       </div>
-
-                      <div class="btn-buy">
-                        <button>Mua hàng</button>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
                       </div>
-
-                      <div class="agree">
-
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
+                      </div>
+                    </div>
+    
+                    <div class="item-slider">
+                      <div class="box-content__sell">
+                        <a href="#">
+                          <div class="box-content__img">
+                            <img
+                              src="https://cdn.nhathuoclongchau.com.vn/unsafe/256x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/DSC_09324_db795e136a.jpg"
+                              alt="Img Product"
+                            />
+    
+                            <div class="product-sale__sell">-20%</div>
+                          </div>
+    
+                          <div class="content">
+                            <p>
+                              Viên sủi Kudos Vitamin C 1000mg hương chanh giúp bổ
+                              sung năng lượng
+                            </p>
+                          </div>
+                        </a>
+    
+                        <div class="price">
+                          <div class="price__new">90.400đ <span>/ Tuýp</span></div>
+                          <div class="price__old">113.000đ</div>
+                        </div>
+    
+                        <div class="total">
+                          <span> Tuýp 20 Viên </span>
+                        </div>
+    
+                        <a href="#">
+                          <div class="btn-sell mt-4 text-white">Chọn mua</div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </div>
+
         <!-- End Main -->
 
         <!-- Start Footer -->
