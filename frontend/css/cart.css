@@ -4,8 +4,8 @@
 }
 
 .wrapper-cart .link-back__home {
-  margin: 8px 0;
-  padding: 8px 0;
+  padding: 16px 0;
+  width: max-content;
 }
 
 .wrapper-cart .link-back__home a {
